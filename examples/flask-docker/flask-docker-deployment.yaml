@@ -19,7 +19,7 @@ spec:
         app: unir-devops
     spec:
       containers:
-        - image: docker.io/jguimeradev/unir-devops:1.0
+        - image: docker.io/jguimeradev/unir-devops:2.0
           name: flask-docker
           ports:
             - containerPort: 5000
