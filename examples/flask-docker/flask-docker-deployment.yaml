@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flask-docker
+  name: unir-devops
 spec:
   replicas: 3
   strategy:
@@ -12,14 +12,14 @@ spec:
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: flask-docker
+      app: unir-devops
   template:
     metadata:
       labels:
-        app: flask-docker
+        app: unir-devops
     spec:
       containers:
-        - image: docker.io/anietounir/flask-docker:1.0
+        - image: docker.io/jguimeradev/unir-devops:1.0
           name: flask-docker
           ports:
             - containerPort: 5000

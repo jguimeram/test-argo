@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: flask-docker
+  name: unir-devops
 spec:
   ports:
   - port: 5000
     targetPort: 5000
   selector:
-    app: flask-docker
+    app: unir-devops
